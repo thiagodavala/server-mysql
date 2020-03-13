@@ -1,0 +1,236 @@
+2020/02/12 23:13:07 Got result in  9.188e-06
+2020/02/12 23:13:08 Got result in  9.162e-06
+2020/02/12 23:13:08 Got result in  2.952e-06
+2020/02/12 23:13:08 Got result in  3.885e-06
+2020/02/12 23:13:09 Got result in  4.72e-06
+2020/02/12 23:13:09 Got result in  1.5904e-05
+2020/02/12 23:13:09 Got result in  4.419e-06
+2020/02/12 23:13:09 Got result in  9.616e-06
+2020/02/12 23:13:09 Got result in  4.936e-06
+2020/02/12 23:13:11 Warning: Unicorn Refund Request: c4a5010e-6734-41e8-974b 3.512e-06
+2020/02/12 23:13:28 Warning: Unicorn Refund Request: c4a5010e-6734-41e8-974b 3.468e-06
+2020/03/13 15:16:26 listen tcp :80: bind: permission denied
+2020/03/13 15:16:46 Got result in  4.075e-06
+2020/03/13 15:16:51 Got result in  2.133e-06
+2020/03/13 15:16:53 Got result in  2.7426e-05
+2020/03/13 15:16:56 Got result in  3.615e-06
+2020/03/13 15:28:39 http: panic serving [::1]:34450: dial tcp 127.0.0.1:3306: connect: connection refused
+goroutine 19 [running]:
+net/http.(*conn).serve.func1(0xc00009ee60)
+	/usr/lib/go-1.13/src/net/http/server.go:1767 +0x139
+panic(0x6e7840, 0xc000012070)
+	/usr/lib/go-1.13/src/runtime/panic.go:679 +0x1b2
+main.hello(0x7d5120, 0xc00012a000, 0xc00011a100)
+	/home/thiago/Documentos/Server/src/main.go:33 +0x47f
+net/http.HandlerFunc.ServeHTTP(0x77d4f0, 0x7d5120, 0xc00012a000, 0xc00011a100)
+	/usr/lib/go-1.13/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0x9d6a60, 0x7d5120, 0xc00012a000, 0xc00011a100)
+	/usr/lib/go-1.13/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000ea000, 0x7d5120, 0xc00012a000, 0xc00011a100)
+	/usr/lib/go-1.13/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00009ee60, 0x7d58a0, 0xc00010e000)
+	/usr/lib/go-1.13/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.13/src/net/http/server.go:2927 +0x38e
+2020/03/13 15:28:39 http: panic serving [::1]:34452: dial tcp 127.0.0.1:3306: connect: connection refused
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc00009ef00)
+	/usr/lib/go-1.13/src/net/http/server.go:1767 +0x139
+panic(0x6e7840, 0xc000012090)
+	/usr/lib/go-1.13/src/runtime/panic.go:679 +0x1b2
+main.hello(0x7d5120, 0xc0000ea0e0, 0xc00011a000)
+	/home/thiago/Documentos/Server/src/main.go:33 +0x47f
+net/http.HandlerFunc.ServeHTTP(0x77d4f0, 0x7d5120, 0xc0000ea0e0, 0xc00011a000)
+	/usr/lib/go-1.13/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0x9d6a60, 0x7d5120, 0xc0000ea0e0, 0xc00011a000)
+	/usr/lib/go-1.13/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000ea000, 0x7d5120, 0xc0000ea0e0, 0xc00011a000)
+	/usr/lib/go-1.13/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00009ef00, 0x7d58a0, 0xc0000ae300)
+	/usr/lib/go-1.13/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.13/src/net/http/server.go:2927 +0x38e
+2020/03/13 15:28:39 http: panic serving [::1]:34458: dial tcp 127.0.0.1:3306: connect: connection refused
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc00016c000)
+	/usr/lib/go-1.13/src/net/http/server.go:1767 +0x139
+panic(0x6e7840, 0xc000012110)
+	/usr/lib/go-1.13/src/runtime/panic.go:679 +0x1b2
+main.hello(0x7d5120, 0xc00012a0e0, 0xc00016e000)
+	/home/thiago/Documentos/Server/src/main.go:33 +0x47f
+net/http.HandlerFunc.ServeHTTP(0x77d4f0, 0x7d5120, 0xc00012a0e0, 0xc00016e000)
+	/usr/lib/go-1.13/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0x9d6a60, 0x7d5120, 0xc00012a0e0, 0xc00016e000)
+	/usr/lib/go-1.13/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000ea000, 0x7d5120, 0xc00012a0e0, 0xc00016e000)
+	/usr/lib/go-1.13/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00016c000, 0x7d58a0, 0xc00005a180)
+	/usr/lib/go-1.13/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.13/src/net/http/server.go:2927 +0x38e
+2020/03/13 15:28:39 http: panic serving [::1]:34462: dial tcp 127.0.0.1:3306: connect: connection refused
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0xc00009efa0)
+	/usr/lib/go-1.13/src/net/http/server.go:1767 +0x139
+panic(0x6e7840, 0xc0001a2050)
+	/usr/lib/go-1.13/src/runtime/panic.go:679 +0x1b2
+main.hello(0x7d5120, 0xc0001a4000, 0xc00011a200)
+	/home/thiago/Documentos/Server/src/main.go:33 +0x47f
+net/http.HandlerFunc.ServeHTTP(0x77d4f0, 0x7d5120, 0xc0001a4000, 0xc00011a200)
+	/usr/lib/go-1.13/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0x9d6a60, 0x7d5120, 0xc0001a4000, 0xc00011a200)
+	/usr/lib/go-1.13/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000ea000, 0x7d5120, 0xc0001a4000, 0xc00011a200)
+	/usr/lib/go-1.13/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00009efa0, 0x7d58a0, 0xc0000ae4c0)
+	/usr/lib/go-1.13/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.13/src/net/http/server.go:2927 +0x38e
+2020/03/13 15:28:39 http: panic serving [::1]:34464: dial tcp 127.0.0.1:3306: connect: connection refused
+goroutine 12 [running]:
+net/http.(*conn).serve.func1(0xc00016c0a0)
+	/usr/lib/go-1.13/src/net/http/server.go:1767 +0x139
+panic(0x6e7840, 0xc00007ef40)
+	/usr/lib/go-1.13/src/runtime/panic.go:679 +0x1b2
+main.hello(0x7d5120, 0xc0000ea1c0, 0xc00011a300)
+	/home/thiago/Documentos/Server/src/main.go:33 +0x47f
+net/http.HandlerFunc.ServeHTTP(0x77d4f0, 0x7d5120, 0xc0000ea1c0, 0xc00011a300)
+	/usr/lib/go-1.13/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0x9d6a60, 0x7d5120, 0xc0000ea1c0, 0xc00011a300)
+	/usr/lib/go-1.13/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000ea000, 0x7d5120, 0xc0000ea1c0, 0xc00011a300)
+	/usr/lib/go-1.13/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00016c0a0, 0x7d58a0, 0xc0000ae540)
+	/usr/lib/go-1.13/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.13/src/net/http/server.go:2927 +0x38e
+2020/03/13 15:28:39 http: panic serving [::1]:34470: dial tcp 127.0.0.1:3306: connect: connection refused
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0xc00009f040)
+	/usr/lib/go-1.13/src/net/http/server.go:1767 +0x139
+panic(0x6e7840, 0xc00007efc0)
+	/usr/lib/go-1.13/src/runtime/panic.go:679 +0x1b2
+main.hello(0x7d5120, 0xc0000ea2a0, 0xc00011a400)
+	/home/thiago/Documentos/Server/src/main.go:33 +0x47f
+net/http.HandlerFunc.ServeHTTP(0x77d4f0, 0x7d5120, 0xc0000ea2a0, 0xc00011a400)
+	/usr/lib/go-1.13/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0x9d6a60, 0x7d5120, 0xc0000ea2a0, 0xc00011a400)
+	/usr/lib/go-1.13/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000ea000, 0x7d5120, 0xc0000ea2a0, 0xc00011a400)
+	/usr/lib/go-1.13/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00009f040, 0x7d58a0, 0xc0000ae6c0)
+	/usr/lib/go-1.13/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.13/src/net/http/server.go:2927 +0x38e
+2020/03/13 15:28:44 http: panic serving [::1]:34474: dial tcp 127.0.0.1:3306: connect: connection refused
+goroutine 13 [running]:
+net/http.(*conn).serve.func1(0xc00016c140)
+	/usr/lib/go-1.13/src/net/http/server.go:1767 +0x139
+panic(0x6e7840, 0xc00007f030)
+	/usr/lib/go-1.13/src/runtime/panic.go:679 +0x1b2
+main.hello(0x7d5120, 0xc0000ea380, 0xc00016e100)
+	/home/thiago/Documentos/Server/src/main.go:33 +0x47f
+net/http.HandlerFunc.ServeHTTP(0x77d4f0, 0x7d5120, 0xc0000ea380, 0xc00016e100)
+	/usr/lib/go-1.13/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0x9d6a60, 0x7d5120, 0xc0000ea380, 0xc00016e100)
+	/usr/lib/go-1.13/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000ea000, 0x7d5120, 0xc0000ea380, 0xc00016e100)
+	/usr/lib/go-1.13/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00016c140, 0x7d58a0, 0xc00005a2c0)
+	/usr/lib/go-1.13/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.13/src/net/http/server.go:2927 +0x38e
+2020/03/13 15:28:44 http: panic serving [::1]:34476: dial tcp 127.0.0.1:3306: connect: connection refused
+goroutine 14 [running]:
+net/http.(*conn).serve.func1(0xc00016c1e0)
+	/usr/lib/go-1.13/src/net/http/server.go:1767 +0x139
+panic(0x6e7840, 0xc0000121a0)
+	/usr/lib/go-1.13/src/runtime/panic.go:679 +0x1b2
+main.hello(0x7d5120, 0xc00012a1c0, 0xc00016e200)
+	/home/thiago/Documentos/Server/src/main.go:33 +0x47f
+net/http.HandlerFunc.ServeHTTP(0x77d4f0, 0x7d5120, 0xc00012a1c0, 0xc00016e200)
+	/usr/lib/go-1.13/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0x9d6a60, 0x7d5120, 0xc00012a1c0, 0xc00016e200)
+	/usr/lib/go-1.13/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000ea000, 0x7d5120, 0xc00012a1c0, 0xc00016e200)
+	/usr/lib/go-1.13/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00016c1e0, 0x7d58a0, 0xc00005a340)
+	/usr/lib/go-1.13/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.13/src/net/http/server.go:2927 +0x38e
+2020/03/13 15:28:44 http: panic serving [::1]:34482: dial tcp 127.0.0.1:3306: connect: connection refused
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0xc00009f0e0)
+	/usr/lib/go-1.13/src/net/http/server.go:1767 +0x139
+panic(0x6e7840, 0xc000012210)
+	/usr/lib/go-1.13/src/runtime/panic.go:679 +0x1b2
+main.hello(0x7d5120, 0xc00012a2a0, 0xc00011a600)
+	/home/thiago/Documentos/Server/src/main.go:33 +0x47f
+net/http.HandlerFunc.ServeHTTP(0x77d4f0, 0x7d5120, 0xc00012a2a0, 0xc00011a600)
+	/usr/lib/go-1.13/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0x9d6a60, 0x7d5120, 0xc00012a2a0, 0xc00011a600)
+	/usr/lib/go-1.13/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000ea000, 0x7d5120, 0xc00012a2a0, 0xc00011a600)
+	/usr/lib/go-1.13/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00009f0e0, 0x7d58a0, 0xc0000ae8c0)
+	/usr/lib/go-1.13/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.13/src/net/http/server.go:2927 +0x38e
+2020/03/13 15:28:45 http: panic serving [::1]:34486: dial tcp 127.0.0.1:3306: connect: connection refused
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0xc00009f180)
+	/usr/lib/go-1.13/src/net/http/server.go:1767 +0x139
+panic(0x6e7840, 0xc000012280)
+	/usr/lib/go-1.13/src/runtime/panic.go:679 +0x1b2
+main.hello(0x7d5120, 0xc00012a380, 0xc00011a800)
+	/home/thiago/Documentos/Server/src/main.go:33 +0x47f
+net/http.HandlerFunc.ServeHTTP(0x77d4f0, 0x7d5120, 0xc00012a380, 0xc00011a800)
+	/usr/lib/go-1.13/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0x9d6a60, 0x7d5120, 0xc00012a380, 0xc00011a800)
+	/usr/lib/go-1.13/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000ea000, 0x7d5120, 0xc00012a380, 0xc00011a800)
+	/usr/lib/go-1.13/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00009f180, 0x7d58a0, 0xc0000ae9c0)
+	/usr/lib/go-1.13/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.13/src/net/http/server.go:2927 +0x38e
+2020/03/13 15:28:45 http: panic serving [::1]:34488: dial tcp 127.0.0.1:3306: connect: connection refused
+goroutine 53 [running]:
+net/http.(*conn).serve.func1(0xc00009f220)
+	/usr/lib/go-1.13/src/net/http/server.go:1767 +0x139
+panic(0x6e7840, 0xc0000122f0)
+	/usr/lib/go-1.13/src/runtime/panic.go:679 +0x1b2
+main.hello(0x7d5120, 0xc00012a460, 0xc00011a700)
+	/home/thiago/Documentos/Server/src/main.go:33 +0x47f
+net/http.HandlerFunc.ServeHTTP(0x77d4f0, 0x7d5120, 0xc00012a460, 0xc00011a700)
+	/usr/lib/go-1.13/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0x9d6a60, 0x7d5120, 0xc00012a460, 0xc00011a700)
+	/usr/lib/go-1.13/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000ea000, 0x7d5120, 0xc00012a460, 0xc00011a700)
+	/usr/lib/go-1.13/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00009f220, 0x7d58a0, 0xc0000ae940)
+	/usr/lib/go-1.13/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.13/src/net/http/server.go:2927 +0x38e
+2020/03/13 15:28:45 http: panic serving [::1]:34494: dial tcp 127.0.0.1:3306: connect: connection refused
+goroutine 54 [running]:
+net/http.(*conn).serve.func1(0xc00009f2c0)
+	/usr/lib/go-1.13/src/net/http/server.go:1767 +0x139
+panic(0x6e7840, 0xc00007f0e0)
+	/usr/lib/go-1.13/src/runtime/panic.go:679 +0x1b2
+main.hello(0x7d5120, 0xc0000ea460, 0xc00011a900)
+	/home/thiago/Documentos/Server/src/main.go:33 +0x47f
+net/http.HandlerFunc.ServeHTTP(0x77d4f0, 0x7d5120, 0xc0000ea460, 0xc00011a900)
+	/usr/lib/go-1.13/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0x9d6a60, 0x7d5120, 0xc0000ea460, 0xc00011a900)
+	/usr/lib/go-1.13/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0000ea000, 0x7d5120, 0xc0000ea460, 0xc00011a900)
+	/usr/lib/go-1.13/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc00009f2c0, 0x7d58a0, 0xc0000aea40)
+	/usr/lib/go-1.13/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/lib/go-1.13/src/net/http/server.go:2927 +0x38e
+2020/03/13 16:37:00 Warning: Unicorn Refund Request: c4a5010e-6734-41e8-974b 0.661247226
+2020/03/13 16:37:06 Got result in  0.655868742
+2020/03/13 16:39:00 Got result in  0.746819698
+2020/03/13 16:39:10 Got result in  0.65583036
